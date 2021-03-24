@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Color and Sound Memory Game</h1>
+
+    <p>
+      Welcome to my game! Repeat back the pattern by pressing buttons!
+    </p>
+
+    <button id="startBtn" onclick="startGame()">
+      Start
+    </button>
+
+    <button id="stopBtn" class="hidden" onclick="stopGame()">
+      Stop
+    </button>
+
+    <text>
+      Lives:
+    </text>
+
+    <text id="live"> </text>
+
+    <audio
+      src="https://cdn.glitch.com/e349fad0-79ba-4400-9ddf-fe1bb90cfe85%2Fsound1.mp3?v=1616551764834"
+      id="sound1"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/e349fad0-79ba-4400-9ddf-fe1bb90cfe85%2Fsound2.mp3?v=1616551762009"
+      id="sound2"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/e349fad0-79ba-4400-9ddf-fe1bb90cfe85%2Fsound3.mp3?v=1616551753692"
+      id="sound3"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/e349fad0-79ba-4400-9ddf-fe1bb90cfe85%2Fsound4.mp3?v=1616551751250"
+      id="sound4"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/e349fad0-79ba-4400-9ddf-fe1bb90cfe85%2Fsound5.mp3?v=1616551749589"
+      id="sound5"
+    ></audio>
+
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onclick="guess(1)"
+        onmousedown="startTone(1)"
+        onmouseup="stopTone(1)"
+      >
+        <img
+          id="img1"
+          src="https://cdn.glitch.com/0f34f23a-693e-42a1-88b6-cfd1344fab8c%2Fbut1.jpg?v=1616537970545"
+          width="150"
+          height="150"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="startTone(2)"
+        onmouseup="stopTone(2)"
+      >
+        <img
+          id="img2"
+          src="https://cdn.glitch.com/0f34f23a-693e-42a1-88b6-cfd1344fab8c%2Fbut2.jpeg?v=1616539347223"
+          width="150"
+          height="150"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="startTone(3)"
+        onmouseup="stopTone(3)"
+      >
+        <img
+          id="img3"
+          src="https://cdn.glitch.com/0f34f23a-693e-42a1-88b6-cfd1344fab8c%2Fbut3.jpg?v=1616539448820"
+          width="150"
+          height="150"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="startTone(4)"
+        onmouseup="stopTone(4)"
+      >
+        <img
+          id="img4"
+          src="https://cdn.glitch.com/0f34f23a-693e-42a1-88b6-cfd1344fab8c%2Fbut4.jpg?v=1616539496309"
+          width="150"
+          height="150"
+          class="hidden"
+        />
+      </button>
+      <button
+        id="button5"
+        onclick="guess(5)"
+        onmousedown="startTone(5)"
+        onmouseup="stopTone(5)"
+      >
+        <img
+          id="img5"
+          src="https://cdn.glitch.com/0f34f23a-693e-42a1-88b6-cfd1344fab8c%2Fbut5.jpg?v=1616541534199"
+          width="150"
+          height="150"
+          class="hidden"
+        />
+      </button>
+    </div>
+  </body>
+</html>
