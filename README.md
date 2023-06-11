@@ -1,7 +1,5 @@
 # Pre-work - _Memory Game_
 
-<img src="https://i.imgur.com/ibIlB9Y.gif" width="250" height="250"/>
-
 **Color and Sound Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program.
 
 Submitted by: **Jiawei Zheng**
